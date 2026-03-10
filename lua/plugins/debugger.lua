@@ -70,6 +70,13 @@ return {
       end,
     },
 
+    {
+      "ravsii/nvim-dap-envfile",
+      version = "*", -- use latest stable release
+      dependencies = { "mfussenegger/nvim-dap" },
+      opts = {},
+    },
+
     -- mason.nvim integration
     {
       "jay-babu/mason-nvim-dap.nvim",
