@@ -21,8 +21,8 @@ return {
       persist_size = true,
       close_on_exit = true, -- close the terminal window when the process exits
       hide_numbers = true, -- hide the number column in toggleterm buffers
-      shell = vim.o.shell,
-      -- if Dockerfile, add: shell = "/bin/bash"
+      shell = "/bin/bash",
+      -- if local: shell = vim.o.shell
     })
 
     function _G.set_terminal_keymaps()

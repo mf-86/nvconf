@@ -116,7 +116,7 @@ return {
       })
 
       require('mason-lspconfig').setup({
-        ensure_installed = {},
+        ensure_installed = {"pyright", "ruff"},
         handlers = {
           -- this first function is the "default handler"
           -- it applies to every language server without a "custom handler"
@@ -166,7 +166,7 @@ return {
     opts = {
       -- Define your formatters
       formatters_by_ft = {
-        python = { "black" },
+        python = { "black", "isort" },
       },
       -- Set default options
       default_format_opts = {

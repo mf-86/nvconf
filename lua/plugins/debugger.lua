@@ -59,6 +59,12 @@ return {
     },
 
     {
+      "ravsii/nvim-dap-envfile",
+      dependencies = { "mfussenegger/nvim-dap" },
+      opts = {},
+    },
+
+    {
       "mfussenegger/nvim-dap-python",
       ft = "python",
       config = function()
@@ -68,13 +74,6 @@ return {
           return "/usr/bin/python"
         end
       end,
-    },
-
-    {
-      "ravsii/nvim-dap-envfile",
-      version = "*", -- use latest stable release
-      dependencies = { "mfussenegger/nvim-dap" },
-      opts = {},
     },
 
     -- mason.nvim integration
