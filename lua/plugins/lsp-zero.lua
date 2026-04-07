@@ -186,5 +186,6 @@ return {
       vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
   },
+  vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover({border = "rounded"})<cr>', opts)
 }
 
